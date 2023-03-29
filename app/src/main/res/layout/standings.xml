@@ -1,277 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="#3E4D9F">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/position"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Pos."
-            android:textStyle="bold"
-            android:textColor="@color/black">
-
-        </TextView>
-        <TextView
-            android:id="@+id/club"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="Club"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-
-        </TextView>
-        <TextView
-            android:id="@+id/GP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:text="GP"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-
-        </TextView>
-        <TextView
-            android:id="@+id/won"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:text="Won"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-
-        </TextView>
-        <TextView
-            android:id="@+id/drawn"
-            android:layout_width="28dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="D"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-        <TextView
-            android:id="@+id/lost"
-            android:layout_width="27dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="L"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-
-        <TextView
-            android:id="@+id/GF"
-            android:layout_width="27dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="GF"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-
-        <TextView
-            android:id="@+id/GA"
-            android:layout_width="27dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="GA"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-        <TextView
-            android:id="@+id/GD"
-            android:layout_width="27dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="GD"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-
-        <TextView
-            android:id="@+id/points"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:text="Points"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-<!--        <TextView-->
-<!--            android:id="@+id/form"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:paddingLeft="5dp"-->
-<!--            android:text="Form"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="@color/black">-->
-<!--        </TextView>-->
-
-    </LinearLayout>
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/pos"
-            android:layout_width="25dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_marginStart="0dp"
+            android:paddingLeft="10dp"
             android:text="1"
-            android:textSize="20sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
 
         <ImageView
             android:id="@+id/Imgarsenal"
-            android:layout_width="30dp"
-            android:layout_height="35dp"
-            android:paddingTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="25dp"
             android:src="@drawable/arsenal">
 
         </ImageView>
         <TextView
             android:id="@+id/txtArsenal"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingTop="5dp"
+            android:layout_weight="1.2"
             android:text="Arsenal"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
         <TextView
             android:id="@+id/played"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="24"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:id="@+id/gwon"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingRight="8dp"
-            android:paddingTop="5dp"
             android:text="18"
-            android:textSize="15sp"
+            android:padding="2dp"
+            android:layout_weight="0.6"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
         <TextView
             android:id="@+id/gdraw"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="11dp"
-            android:paddingRight="8dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="3"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:id="@+id/glost"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="8dp"
-            android:paddingRight="11dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="3"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
         <TextView
             android:id="@+id/goalF"
-            android:layout_width="35dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="52"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
         <TextView
             android:id="@+id/goalA"
-            android:layout_width="31dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="23"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:id="@+id/goalD"
-            android:layout_width="35dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="+29"
-            android:textSize="15sp"
+            android:textSize="11sp"
             android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:id="@+id/Total_points"
-            android:layout_width="35dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:layout_weight="0.6"
+            android:padding="2dp"
             android:text="57"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="11sp"
             android:textStyle="bold">
-
         </TextView>
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:src="@drawable/baseline_check_circle_24">-->
-<!--        </ImageView>-->
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:src="@drawable/round_remove_24">-->
-<!--        </ImageView>-->
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:src="@drawable/baseline_check_circle_24">-->
-<!--        </ImageView>-->
-
+        <ImageView
+            android:id="@+id/fomwin"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_check_circle_24">
+        </ImageView>
+        <ImageView
+            android:id="@+id/fomlos"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_cancel_24">
+        </ImageView>
+        <ImageView
+            android:id="@+id/fomwin2"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_check_circle_24">
+        </ImageView>
+        <ImageView
+            android:id="@+id/fomwin3"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_check_circle_24">
+        </ImageView>
+        <ImageView
+            android:id="@+id/fomdown"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="20dp"
+            android:src="@drawable/round_remove_24">
+        </ImageView>
 
 
 
     </LinearLayout>
-
-
-
 </LinearLayout>

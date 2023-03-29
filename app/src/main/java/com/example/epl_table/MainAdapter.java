@@ -1,6 +1,7 @@
 package com.example.epl_table;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class MainAdapter extends BaseAdapter {
-    ImageView imgArsenal;
+    ImageView imgArsenal,formwon,formlos,formdown,formwon2,formwon3;
     TextView  clubName, played, won, drawn, lost,goalF,goalA,goalD,totalPoints;
     private String name;
     private int img,  gplayed, gwon,gdrawn,glost,goF,goA,goD,points;
@@ -36,6 +37,13 @@ public class MainAdapter extends BaseAdapter {
         view = LayoutInflater.from(context).inflate(R.layout.standings,viewGroup, false);
 //       position =view.findViewById(R.id.pos);
        imgArsenal =view.findViewById(R.id.Imgarsenal);
+       formwon =view.findViewById(R.id.fomwin);
+       formlos =view.findViewById(R.id.fomlos);
+       formwon2 =view.findViewById(R.id.fomwin2);
+       formdown =view.findViewById(R.id.fomdown);
+       formwon3 =view.findViewById(R.id.fomwin3);
+
+
        clubName =view.findViewById(R.id.txtArsenal);
        played = view.findViewById(R.id.played);
        won =view.findViewById((R.id.gwon));
@@ -47,16 +55,18 @@ public class MainAdapter extends BaseAdapter {
        totalPoints =view.findViewById(R.id.Total_points);
 
 
-//       imgArsenal.setImageResource(words.get(Integer.parseInt(String.valueOf(img))).getClubImage());
-//       clubName.setText(Integer.parseInt(words.get(Integer.parseInt(name)).getClubName()));
-       played.setText(words.get(i).getPlayed());
-       won.setText(words.get(i).getWon());
-       drawn.setText(words.get(i).getDrawn());
-       lost.setText(words.get(i).getLost());
-       goalF.setText(words.get(i).getgF());
-       goalA.setText(words.get(i).getgA());
-       goalD.setText(words.get(i).getgD());
-       totalPoints.setText(words.get(i).getPoints());
+       imgArsenal.setImageResource(words.get(i).getClubImage());
+       clubName.setText(words.get(i).getClubName());
+       played.setText(Integer.toString(words.get(i).getPlayed()));
+       won.setText(Integer.toString(words.get(i).getWon()));
+       drawn.setText(Integer.toString(words.get(i).getDrawn()));
+       lost.setText(Integer.toString(words.get(i).getLost()));
+       goalF.setText(Integer.toString(words.get(i).getgF()));
+       goalA.setText(Integer.toString(words.get(i).getgA()));
+       goalD.setText(Integer.toString(words.get(i).getgD()));
+       totalPoints.setText(Integer.toString(words.get(i).getPoints()));
+//       formwon.setImageResource(words.get(i).get);
+
 
         return  view;
     }
